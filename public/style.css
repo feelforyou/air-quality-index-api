@@ -1,0 +1,131 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: sans-serif, serif;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+a :any-link {
+  color: black;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.title {
+  display: inline;
+  color: whitesmoke;
+}
+.icon {
+  display: inline;
+  font-size: 3rem;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #000;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 3rem;
+}
+.search-input {
+  min-width: 60%;
+  height: 2.4rem;
+}
+.search-btn {
+  background-color: #000;
+  color: whitesmoke;
+  height: 2.4rem;
+  padding: 0 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+.loader {
+  font-size: 2rem;
+  color: gray;
+  opacity: 0.8;
+}
+.loader-container {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.weathercard {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 0.25rem;
+  background-color: #000;
+  color: whitesmoke;
+  width: 90vw;
+  max-width: 700px;
+}
+.weathercard a {
+  color: whitesmoke;
+}
+
+.news.img {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+}
+.alarm {
+  color: red;
+  text-align: center;
+}
+.aqi-container {
+  margin-bottom: 3rem;
+  border-bottom: 1px solid whitesmoke;
+}
+.time {
+  opacity: 0.7;
+  font-size: clamp(0.7rem, 1.7vw, 1.2rem);
+}
+.healthy {
+  color: green;
+}
+
+.moderate {
+  color: yellow;
+}
+.danger {
+  color: red;
+}
+
+.news {
+  color: whitesmoke;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+.span-msg {
+  font-size: 1.5rem;
+}
