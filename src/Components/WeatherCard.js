@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const WeatherCard = ({ formatTimestamp, weatherData }) => {
   const city = weatherData.cities[0].city;
@@ -13,24 +13,27 @@ const WeatherCard = ({ formatTimestamp, weatherData }) => {
       <div>
         <div className="aqi-container">
           <h2>
-            {city},{country}, Current Measurement:{' '}
+            {city}, {country}.
+          </h2>
+          <h2>
+            Current AQI Measurement:{" "}
             <span
               className={
                 aqiMeasurement < 30
-                  ? 'healthy'
+                  ? "healthy"
                   : aqiMeasurement >= 30 && aqiMeasurement < 60
-                  ? 'moderate'
-                  : 'danger'
+                  ? "moderate"
+                  : "danger"
               }
             >
-              {aqiMeasurement}{' '}
+              {aqiMeasurement}{" "}
             </span>
             <span className="span-msg">
               {aqiMeasurement < 30
-                ? '(healthy)'
+                ? "(healthy)"
                 : aqiMeasurement >= 30 && aqiMeasurement < 60
-                ? '(moderate)'
-                : '(danger)'}
+                ? "(moderate)"
+                : "(unhealthy)"}
             </span>
           </h2>
 

@@ -32,11 +32,30 @@ a :any-link {
 .title {
   display: inline;
   color: whitesmoke;
+  
 }
 .icon {
   display: inline;
   font-size: 3rem;
 }
+.icon {
+  animation: iconAnimation 2s   ease-in-out forwards;
+}
+
+@keyframes iconAnimation {
+  0%{
+      transform: translateY(-50%);
+      
+  }
+ 
+  100%{
+    transform: translateY(0%);
+      
+
+  }
+  
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -80,22 +99,25 @@ a :any-link {
   flex-direction: column;
   gap: 1rem;
   padding: 1rem;
-  margin: 1rem auto;
+  margin: 0.5rem auto;
   border-radius: 0.25rem;
   background-color: #000;
   color: whitesmoke;
   width: 90vw;
   max-width: 700px;
+  
+  
 }
 .weathercard a {
   color: whitesmoke;
 }
 
-.news.img {
+.news-img {
   display: block;
   width: 100%;
-  max-width: 360px;
   height: auto;
+  
+  
 }
 .alarm {
   color: red;
@@ -106,8 +128,9 @@ a :any-link {
   border-bottom: 1px solid whitesmoke;
 }
 .time {
+  margin-top: 1rem;
   opacity: 0.7;
-  font-size: clamp(0.7rem, 1.7vw, 1.2rem);
+  font-size: clamp(0.8rem, 1.7vw, 1.2rem);
 }
 .healthy {
   color: green;
@@ -127,5 +150,5 @@ a :any-link {
   font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 .span-msg {
-  font-size: 1.5rem;
+  font-size: clamp(1rem,2.5vw,1.5rem);
 }
