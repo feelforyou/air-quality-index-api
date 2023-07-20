@@ -39,17 +39,34 @@ a :any-link {
   font-size: 3rem;
 }
 .icon {
-  animation: iconAnimation 2s   ease-in-out forwards;
+  animation: iconAnimation 1.5s   ease-in-out forwards;
 }
 
 @keyframes iconAnimation {
   0%{
-      transform: translateY(-50%);
+      transform: translateY(-100%);
       
   }
  
   100%{
     transform: translateY(0%);
+      
+
+  }
+  
+}
+.title {
+  animation: titleAnimation 1.5s   ease-in-out forwards;
+}
+
+@keyframes titleAnimation {
+  0%{
+      transform: translateX(200%);
+      
+  }
+ 
+  100%{
+    transform: translateX(0%);
       
 
   }
