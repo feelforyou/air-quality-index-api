@@ -39,7 +39,7 @@ a :any-link {
   font-size: 3rem;
 }
 .icon {
-  animation: iconAnimation 1.5s   ease-in-out forwards;
+  animation: iconAnimation 0.5s   ease-in-out forwards;
 }
 
 @keyframes iconAnimation {
@@ -56,7 +56,7 @@ a :any-link {
   
 }
 .title {
-  animation: titleAnimation 1.5s   ease-in-out forwards;
+  animation: titleAnimation 0.5s   ease-in-out forwards;
 }
 
 @keyframes titleAnimation {
