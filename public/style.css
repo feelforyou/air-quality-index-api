@@ -61,12 +61,15 @@ a :any-link {
 
 @keyframes titleAnimation {
   0%{
-      transform: translateX(100%);
+      opacity: 0.2;
       
+  }
+  50%{
+    opacity: 0.5;
   }
  
   100%{
-    transform: translateX(0%);
+    opacity: 1;
       
 
   }
