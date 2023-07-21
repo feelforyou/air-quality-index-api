@@ -1,3 +1,3 @@
 # air-quality-index
-[Live Link of The App on Vercel](https://air-quality-index-nu.vercel.app/)
+[App link on Vercel](https://secure-aqi.vercel.app/)
 
